@@ -1,0 +1,85 @@
+<!--
+    Title: Personal Portfolio
+    Author: Allan Trejo
+    Date: 03-05-2022
+    Description: index html
+    Resources: Bulma.io, font awesome, gsap
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- Style Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- JS Scripts footer and header svg -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/svgcomponent.js"></script>
+    <script src="../js/footer.js"></script>
+</head>
+
+
+<body>
+    <div class="empty-divider"></div>
+    <div class="layout-container">
+        <!-- Header web part -->
+        <header-component></header-component>
+
+        <div class="content">
+            <!-- Svg web part -->
+            <svg-component></svg-component>
+            <div class="headings">Home</div>
+            <div class="assign-container">
+
+                <div id="sub-head">Hi My name is </div>
+                <div class=" intro-heading">Allan Trejo.</div>
+
+                <div class="intro-content">
+                    I am a Web Developer who enjoys building software for the web.
+
+                </div>
+
+            </div>
+
+
+            <div class="bucket">Bucket List <i class="fa-solid fa-face-dizzy highlight"></i> <i
+                    class="fa-solid fa-battery-quarter highlight "></i></div>
+            <div class="bucket-list ">
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-caret-right highlight"></i> Read the Classics</li>
+                        <li><i class="fa-solid fa-caret-right highlight"></i> Develop my App</li>
+                        <li><i class="fa-solid fa-caret-right highlight"></i> Visit Latin America</li>
+                        <li><i class="fa-solid fa-caret-right highlight"></i> Start a Small Business</li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-caret-right highlight"></i> Volunteer to Build a Home</li>
+                        <li><i class="fa-solid fa-caret-right highlight"></i> Hike up Yosemite</li>
+                        <li><i class="fa-solid fa-caret-right highlight"></i> Learn Latin and Greek</li>
+                        <li><i class="fa-solid fa-caret-right highlight"></i> Build a Small Botanical Garden</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Animation script -->
+        <script src="../js/animate.js"></script>
+        <!-- Footer web part -->
+        <footer-component></footer-component>
+
+    </div>
+</body>
+
+</html>

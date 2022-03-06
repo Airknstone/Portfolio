@@ -1,0 +1,46 @@
+#sub-head {
+  margin-top: 3rem;
+}
+.bucket {
+  padding: 1rem;
+}
+.bucket-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  ul {
+    list-style: none;
+  }
+}
+.intro-heading {
+  color: $primary-color;
+  text-align: left;
+  font-size: 4.5rem;
+  opacity: 0;
+  top: -50px;
+  position: relative;
+  letter-spacing: -7px;
+}
+.intro-content {
+  margin-top: 1rem;
+  padding: 0 4rem 4rem 0;
+}
+.svg-component {
+  position: absolute;
+  top: 20;
+  right: -220px;
+  width: 650px;
+  height: 620px;
+}
+.path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: dash 5s forwards infinite;
+  stroke: $primary-color;
+  stroke-width: 12;
+}
+
+@keyframes dash {
+  50% {
+    stroke-dashoffset: 0;
+  }
+}

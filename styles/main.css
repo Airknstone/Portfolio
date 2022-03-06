@@ -1,0 +1,367 @@
+/* 
+Title: main.css
+Author: Allan Trejo
+Date: 03-5-2022
+Description: CSS compiled from SASS protfolio styles
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap');
+/* $primary-color: #38c7af;
+$accent-color: #579199; */
+/* 0a192f */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #09182e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(189, 189, 189, 0.856);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #38c7af;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+}
+
+body {
+  background: #09182e;
+}
+
+.empty-divider {
+  height: 30px;
+  width: 86%;
+  position: fixed;
+  z-index: 1;
+  outline: 1px solid #60d2c1a9;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.layout-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12% auto 14%;
+  grid-template-columns: 12% auto 14%;
+}
+
+.content {
+  color: rgba(189, 189, 189, 0.856);
+  padding: 3rem 5rem;
+  min-height: 92.5vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  font-size: 1rem;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.headings {
+  color: #38c7af;
+  position: fixed;
+  top: 55px;
+  left: 0%;
+  right: 85.5%;
+  padding: 3px 15px 3px 0;
+  letter-spacing: 2px;
+  background-color: #38c7af;
+  font-size: 1.5rem;
+  text-align: right;
+  color: #09182e;
+}
+
+#navigation {
+  border-right: 1.5px solid #60d2c1a9;
+  position: fixed;
+  height: 100%;
+  width: 12%;
+  margin-top: 30px;
+}
+
+#navigation ul {
+  left: 35%;
+  top: 5rem;
+  right: 10%;
+  bottom: 5rem;
+  position: absolute;
+  margin-right: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#navigation ul li {
+  list-style: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#navigation ul li:hover {
+  background-color: #60d2c1a9;
+  color: white;
+}
+
+#navigation ul li a {
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+  color: rgba(189, 189, 189, 0.856);
+}
+
+#navigation ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.grid-container-3 {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem 1rem;
+}
+
+.grid-container-3 a {
+  color: rgba(189, 189, 189, 0.856);
+}
+
+.grid-container-3 a:hover {
+  color: #38c7af;
+}
+
+footer {
+  border-left: 1px solid #60d2c1a9;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  color: rgba(189, 189, 189, 0.856);
+  width: 14%;
+}
+
+footer .github {
+  margin-top: 8rem;
+}
+
+footer .github a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgba(189, 189, 189, 0.856);
+}
+
+footer .github a:hover {
+  color: #60d2c1a9;
+}
+
+footer .bellevue {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  border-top: 1px solid #60d2c1a9;
+}
+
+footer .bellevue a {
+  color: #60d2c1a9;
+  text-decoration: none;
+}
+
+footer .bellevue a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  color: #38c7af;
+  font-size: 3.5rem;
+  text-align: center;
+  border-bottom: 1px solid #38c7af;
+  margin: 0 13rem 3rem;
+}
+
+.intro {
+  padding: 0 6rem;
+  text-align: center;
+}
+
+.about {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 10px;
+  text-align: center;
+}
+
+.about img {
+  width: 30rem;
+  height: 25rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.about .about-text {
+  padding: 8rem 0;
+}
+
+#sub-head {
+  margin-top: 3rem;
+}
+
+.bucket {
+  padding: 1rem;
+}
+
+.bucket-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bucket-list ul {
+  list-style: none;
+}
+
+.intro-heading {
+  color: #38c7af;
+  text-align: left;
+  font-size: 4.5rem;
+  opacity: 0;
+  top: -50px;
+  position: relative;
+  letter-spacing: -7px;
+}
+
+.intro-content {
+  margin-top: 1rem;
+  padding: 0 4rem 4rem 0;
+}
+
+.svg-component {
+  position: absolute;
+  top: 20;
+  right: -220px;
+  width: 650px;
+  height: 620px;
+}
+
+.path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  -webkit-animation: dash 5s forwards infinite;
+  animation: dash 5s forwards infinite;
+  stroke: #38c7af;
+  stroke-width: 12;
+}
+
+@-webkit-keyframes dash {
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.card {
+  background-color: #09182e;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.829);
+  box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.829);
+  color: rgba(201, 201, 201, 0.829);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  min-height: 350px;
+  opacity: 0;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.card-content {
+  color: rgba(189, 189, 189, 0.856);
+}
+
+.card-columns {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.highlight {
+  color: #38c7af;
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+}
+
+.card-subtitle {
+  margin-top: 1rem;
+  text-align: center;
+  color: rgba(189, 189, 189, 0.856);
+}
+
+.card-subtitle a:hover {
+  color: #38c7af;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 #38c7af;
+  box-shadow: 0 8px 16px 0 #38c7af;
+  color: #38c7af;
+}
+
+.form {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+}
+
+.form-field {
+  padding: 20px;
+}
+
+.assign-container {
+  padding: 10px;
+}
+
+.assign-content {
+  margin: 3% auto 0;
+}
+/*# sourceMappingURL=main.css.map */
