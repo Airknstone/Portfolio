@@ -3,13 +3,13 @@
   box-shadow: 0 4px 8px 0 $hover-color;
   color: $hover-color;
   transition: all 0.3s;
-  min-height: 300px;
+  min-height: 335px;
   padding: 1rem 0 0 0;
   overflow: hidden;
   opacity: 0;
   img {
     width: 100%;
-    height: 250px;
+    height: 285px;
     object-fit: cover;
   }
 }
@@ -68,5 +68,5 @@
   margin: 3% auto 0;
 }
 .animate-in {
-  transform: translateY(70px);
+  transform: translateY(100px);
 }
