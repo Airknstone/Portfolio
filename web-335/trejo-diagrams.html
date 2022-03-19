@@ -1,0 +1,119 @@
+<!--
+    Title: Personal Portfolio
+    Author: Allan Trejo
+    Date: 03-05-2022
+    Description: index html
+    Resources: Bulma.io, font awesome, gsap
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- Style Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- JS Scripts footer and header svg -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/svgcomponent.js"></script>
+    <script src="../js/footer.js"></script>
+</head>
+
+
+<body>
+    <div class="empty-divider"></div>
+    <div class="layout-container">
+        <!-- Header web part -->
+        <div>
+            <nav id='navigation'>
+                <ul>
+                    <li><a href='../index.html'><i class="fas fa-home"></i><br> Home</a></li>
+                    <li><a href='../about.html'><i class="far fa-address-card"></i><br> About</a></li>
+                    <li><a href='../resume.html'><i class="far fa-file"></i><br> Resume</a></li>
+                    <li><a href='../projects.html'><i class="far fa-folder-open"></i><br> Projects</a></li>
+                    <li><a href='../database.html'><i class="fas fa-database"></i><br> Database Diagrams</a></li>
+                    <li><a href='../api.html'><i class="fas fa-bezier-curve"></i><br> API's</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <!-- Svg web part -->
+
+            <div class="headings">Database Diagrams</div>
+            <div class="grid-container-3">
+                <div class="assign-container">
+                    <div class="assign-content">
+                        <div class="card ">
+                            <div class="card-content has-text-centered">
+                                Object Relational Diagram #1</div>
+                            <a href="#" data-target="ORD1" class="js-modal-trigger">
+                                <img src="../nosql-data-diagrams/ORD-1.png" alt=""></a>
+                        </div>
+                        <div class="modal" id="ORD1">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <p class="image is-4by3">
+                                    <img src="../nosql-data-diagrams/ORD-1.png" alt="">
+                                </p>
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="assign-container">
+                    <div class="assign-content">
+                        <div class="card ">
+                            <div class="card-content has-text-centered">
+                                NoSQL Diagram #1</div>
+                            <a href="#" data-target="nosql1" class="js-modal-trigger">
+                                <img src="../nosql-data-diagrams/NoSQL.png" alt=""></a>
+                        </div>
+                        <div class="modal" id="nosql1">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <p class="image is-4by3">
+                                    <img src="../nosql-data-diagrams/NoSQL.png" alt="">
+                                </p>
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="assign-container">
+                    <div class="assign-content">
+                        <div class="card">
+                            <div class="card-title">
+                                Database 3 </div>
+                            <div class="card-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum turpis a
+                                    nisi congue dapibus.
+                                    Etiam dapibus euismod urna, sed tempus ipsum feugiat nec. Mauris ac lectus ipsum, eu
+                                    imperdiet dui.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animation scripts -->
+        <script src="../js/animate.js"></script>
+        <!-- Footer web part -->
+        <footer-component></footer-component>
+
+    </div>
+</body>
+
+</html>

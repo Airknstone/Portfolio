@@ -1,12 +1,5 @@
-/* 
-Title: main.css
-Author: Allan Trejo
-Date: 03-5-2022
-Description: CSS compiled from SASS protfolio styles
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap");
 /* $primary-color: #38c7af;
 $accent-color: #579199; */
 /* 0a192f */
@@ -33,7 +26,7 @@ $accent-color: #579199; */
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Source Code Pro', monospace;
 }
 
@@ -48,14 +41,14 @@ body {
   z-index: 1;
   outline: 1px solid #60d2c1a9;
   -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .layout-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 12% auto 14%;
-  grid-template-columns: 12% auto 14%;
+      grid-template-columns: 12% auto 14%;
 }
 
 .content {
@@ -103,11 +96,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #navigation ul li {
@@ -138,7 +131,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4rem 1rem;
 }
 
@@ -208,7 +201,7 @@ footer .bellevue a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 50px 10px;
   text-align: center;
 }
@@ -217,7 +210,7 @@ footer .bellevue a:hover {
   width: 30rem;
   height: 25rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .about .about-text {
@@ -236,7 +229,7 @@ footer .bellevue a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .bucket-list ul {
@@ -270,7 +263,7 @@ footer .bellevue a:hover {
   stroke-dasharray: 200;
   stroke-dashoffset: 200;
   -webkit-animation: dash 5s forwards infinite;
-  animation: dash 5s forwards infinite;
+          animation: dash 5s forwards infinite;
   stroke: #38c7af;
   stroke-width: 12;
 }
@@ -290,12 +283,19 @@ footer .bellevue a:hover {
 .card {
   background-color: #09182e;
   -webkit-box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.829);
-  box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.829);
+          box-shadow: 0 4px 8px 0 rgba(201, 201, 201, 0.829);
   color: rgba(201, 201, 201, 0.829);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  min-height: 350px;
+  min-height: 300px;
+  padding: 1rem 0 0 0;
+  overflow: hidden;
   opacity: 0;
+}
+
+.card img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card-title {
@@ -313,7 +313,7 @@ footer .bellevue a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
-  grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
   gap: 2rem;
   padding: 1rem;
 }
@@ -342,7 +342,7 @@ footer .bellevue a:hover {
 
 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 #38c7af;
-  box-shadow: 0 8px 16px 0 #38c7af;
+          box-shadow: 0 8px 16px 0 #38c7af;
   color: #38c7af;
 }
 
@@ -350,7 +350,7 @@ footer .bellevue a:hover {
   display: -ms-inline-grid;
   display: inline-grid;
   -ms-grid-columns: auto;
-  grid-template-columns: auto;
+      grid-template-columns: auto;
 }
 
 .form-field {
@@ -363,5 +363,10 @@ footer .bellevue a:hover {
 
 .assign-content {
   margin: 3% auto 0;
+}
+
+.animate-in {
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
 }
 /*# sourceMappingURL=main.css.map */

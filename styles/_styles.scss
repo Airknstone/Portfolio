@@ -3,8 +3,13 @@
   box-shadow: 0 4px 8px 0 $hover-color;
   color: $hover-color;
   transition: all 0.3s;
-  min-height: 350px;
+  min-height: 300px;
+  padding: 1rem 0 0 0;
+  overflow: hidden;
   opacity: 0;
+  img {
+    object-fit: contain;
+  }
 }
 
 .card-title {
@@ -59,4 +64,7 @@
 
 .assign-content {
   margin: 3% auto 0;
+}
+.animate-in {
+  transform: translateY(70px);
 }
