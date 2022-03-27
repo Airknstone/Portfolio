@@ -371,4 +371,14 @@ footer .bellevue a:hover {
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
 }
+
+.image img {
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.nosql {
+  background-color: #2e2e2e !important;
+  padding: 0.5rem;
+}
 /*# sourceMappingURL=main.css.map */

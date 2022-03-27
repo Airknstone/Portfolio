@@ -70,3 +70,13 @@
 .animate-in {
   transform: translateY(100px);
 }
+.image {
+  img {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+  }
+}
+.nosql {
+  background-color: rgb(46, 46, 46) !important;
+  padding: 0.5rem;
+}
