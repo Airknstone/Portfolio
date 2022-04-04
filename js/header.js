@@ -18,7 +18,7 @@ class HeaderComponent extends HTMLElement {
         <li><a href='./about.html'><i class="far fa-address-card"></i><br> About</a></li>
         <li><a href='./resume.html'><i class="far fa-file"></i><br> Resume</a></li>
         <li><a href='./projects.html'><i class="far fa-folder-open"></i><br> Projects</a></li>
-        <li><a href='./database.html'><i class="fas fa-database"></i><br> Database Diagrams</a></li>
+        <li><a href='./web-335/trejo-diagrams.html'><i class="fas fa-database"></i><br> Database Diagrams</a></li>
         <li><a href='./api.html'><i class="fas fa-bezier-curve"></i><br> API's</a></li>
         </ul>  
     </nav>
