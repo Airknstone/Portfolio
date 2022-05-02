@@ -23,9 +23,7 @@
 
   font-weight: 400;
 }
-.card-content {
-  color: $grey-text;
-}
+
 .card-columns {
   margin-top: 2rem;
   display: grid;
@@ -37,6 +35,7 @@
   color: $primary-color;
 }
 .card-content {
+  color: $grey-text;
   padding: 2px 16px;
   p {
     font-size: 0.9rem;
@@ -53,6 +52,9 @@
 .card:hover {
   box-shadow: 0 8px 16px 0 $primary-color;
   color: $primary-color;
+  .card-content {
+    color: $primary-color;
+  }
 }
 
 .form {

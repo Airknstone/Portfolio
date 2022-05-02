@@ -311,10 +311,6 @@ footer .bellevue a:hover {
   font-weight: 400;
 }
 
-.card-content {
-  color: rgba(189, 189, 189, 0.856);
-}
-
 .card-columns {
   margin-top: 2rem;
   display: -ms-grid;
@@ -330,6 +326,7 @@ footer .bellevue a:hover {
 }
 
 .card-content {
+  color: rgba(189, 189, 189, 0.856);
   padding: 2px 16px;
 }
 
@@ -350,6 +347,10 @@ footer .bellevue a:hover {
 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 #38c7af;
           box-shadow: 0 8px 16px 0 #38c7af;
+  color: #38c7af;
+}
+
+.card:hover .card-content {
   color: #38c7af;
 }
 
