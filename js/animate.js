@@ -13,7 +13,7 @@ gsap.from('.bucket-list li', {
 gsap.from('.bucket', { duration: 1, delay: 0.5, opacity: 0 });
 gsap.to('.card', {
   opacity: 1,
-  stagger: 0.3, // 0.1 seconds between when each ".box" element starts animating
+  stagger: 0.15, // 0.1 seconds between when each ".box" element starts animating
 });
 
 gsap.to('.animate-in', {
