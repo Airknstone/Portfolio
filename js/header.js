@@ -20,6 +20,7 @@ class HeaderComponent extends HTMLElement {
         <li><a href='./projects.html'><i class="far fa-folder-open"></i><br> Projects</a></li>
         <li><a href='./web-335/trejo-diagrams.html'><i class="fas fa-database"></i><br> Database Diagrams</a></li>
         <li><a href='./api.html'><i class="fas fa-bezier-curve"></i><br> API's</a></li>
+        <li><a href='./web-430/trejo-tech-value-stream.html'><i class="fa-solid fa-infinity"></i><br> DevOps</a></li>
         </ul>  
     </nav>
 
