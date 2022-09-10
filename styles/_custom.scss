@@ -19,6 +19,7 @@ body {
 .layout-container {
   display: grid;
   grid-template-columns: 12% auto 14%;
+  min-height: 100vh;
 }
 .content {
   color: $grey-text;
